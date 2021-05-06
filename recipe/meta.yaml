@@ -1,5 +1,5 @@
 {% set name = "metadetect" %}
-{% set version = "0.2.0" %}
+{% set version = "0.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://github.com/esheldon/metadetect/archive/{{ version }}.tar.gz
-  sha256: e120fa01474cb1dc9fd297f65c5c237391bae4281c5732d1a09c98426e311451
+  sha256: 7a223efd95208a4323b22043ec8a3e027b9f4cdd6a7a196dcaff286cff4e4e6f
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -40,7 +40,7 @@ about:
   license: GPL-3.0-only
   license_family: GPL
   license_file: LICENSE
-  summary: 'Library for meta-detection, combining detection and metacalibration'
+  summary: Library for meta-detection, combining detection and metacalibration
 
 extra:
   recipe-maintainers:
