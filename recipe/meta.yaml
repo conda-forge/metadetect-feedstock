@@ -1,5 +1,5 @@
 {% set name = "metadetect" %}
-{% set version = "0.3.10" %}
+{% set version = "0.3.11" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/esheldon/metadetect/archive/{{ version }}.tar.gz
-  sha256: 6893124c4b97740d6de70ad3f74da72259f8fb3715767b72597940110ee72782
+  sha256: e2a4721db0e982bf47672b43e19586c6a2ccfd4af3faf8770e865bdce223e30e
 
 build:
   noarch: python
