@@ -1,5 +1,5 @@
 {% set name = "metadetect" %}
-{% set version = "0.9.0" %}
+{% set version = "0.10.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/esheldon/metadetect/archive/{{ version }}.tar.gz
-  sha256: 044a9d14c40a2a65bbdfcfe1992a756c653da66b60c867965af9d8c95f60f321
+  sha256: 3819570fdd07fd228d994915d5f8fca8970cf18a43d0fa12dae277b1ccc689b2
 
 build:
   noarch: python
@@ -30,7 +30,7 @@ requirements:
     - sep
     - meds
     - ngmix >=2.1.0
-    - des-sxdes
+    - des-sxdes >=0.3.0  # needed for correct default detection config
     - setuptools  # needed for pkg_resources
 
 test:
