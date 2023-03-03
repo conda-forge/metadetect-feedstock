@@ -1,11 +1,11 @@
-About metadetect
-================
+About metadetect-feedstock
+==========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/metadetect-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/esheldon/metadetect
 
 Package license: GPL-3.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/metadetect-feedstock/blob/main/LICENSE.txt)
 
 Summary: Library for meta-detection, combining detection and metacalibration
 
