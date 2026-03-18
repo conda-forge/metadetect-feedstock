@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 1
+  number: 2
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -32,7 +32,7 @@ requirements:
     - meds
     - ngmix >=2.3.0
     - des-sxdes >=0.3.0  # needed for correct default detection config
-    - setuptools  # needed for pkg_resources
+    - setuptools <82 # needed for pkg_resources
 
 test:
   requires:
